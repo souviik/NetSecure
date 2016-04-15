@@ -3,9 +3,9 @@
 import re
 import urllib
 from site_fetch import *
-from vulnerability import *
+from vulnerability import *														#importing vulnerablity module
 
-def inputUrl():
+def inputUrl():																	#getting input from user
 	url = raw_input(color.bold+"  Enter the URL to scan: "+color.end)
 	siteInfo(url)
 
@@ -26,7 +26,7 @@ def inputUrl():
 			else:
 				exit(1)
 
-		else:
+		else:									#checking if the URL is invalid. URL should be of th form http://yoursite.com/page.php?id=value
 			print color.red +"\n [Warning] "+ color.end + color.bold+"%s"%url +color.end + color.red +" is not a valid URL"+color.end
 			print color.red +" [Warning] Enter a full URL like http://yoursite.com/page.php?id=value \n"+ color.end
 			exit()
