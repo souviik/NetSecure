@@ -1,6 +1,6 @@
 # NetSecure
 
-#To use the product, users are required to have python 2.7.x installed on their system, since the development is solely based on python language.
+#To use the tool, users are required to have python 2.7.x installed on their system, since the development is solely based on python language.
 
 1.  To use the application, the user should first navigate to the application directory using cd command in the terminal.
 	cd /application/Netsecure
